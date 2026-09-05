@@ -4,23 +4,23 @@
 }
 
 .feedback-demo {
-  gap: var(--space-6);
-  margin-top: var(--space-6);
+  gap: var(--as-space-6);
+  margin-top: var(--as-space-6);
 }
 
 .feedback-demo__section {
-  gap: var(--space-3);
+  gap: var(--as-space-3);
 }
 
 .feedback-demo h2 {
   margin: 0;
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-semibold);
+  font-size: var(--as-font-size-lg);
+  font-weight: var(--as-font-weight-semibold);
 }
 
 .toast-demo {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: var(--space-2);
+  gap: var(--as-space-2);
 }
