@@ -12,7 +12,7 @@
     "node": "^20.19.0 || >=22.12.0"
   },
   "dependencies": {
-    "@apps-simples/ui": "github:JeanLuis-DEV/design-system-apps-simples#v0.2.0",
+    "@apps-simples/ui": "github:JeanLuis-DEV/design-system-apps-simples#v0.3.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },
