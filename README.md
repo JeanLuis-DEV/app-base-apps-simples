@@ -8,7 +8,7 @@ Novos aplicativos devem nascer deste template e preservar sua estrutura comum. C
 
 Os componentes e tokens oficiais são consumidos pela biblioteca `@apps-simples/ui`, sem cópias locais no App Base. O CSS oficial também é carregado pela exportação pública `@apps-simples/ui/style.css`.
 
-A dependência está fixada na tag `v0.2.0` do repositório `JeanLuis-DEV/design-system-apps-simples`.
+A dependência está fixada na tag `v0.4.1` do repositório `JeanLuis-DEV/design-system-apps-simples`.
 
 O `AppLayout`, os estilos globais e os arquivos específicos da aplicação permanecem no App Base.
 
