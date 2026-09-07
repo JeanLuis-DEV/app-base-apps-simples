@@ -14,3 +14,5 @@ Regras:
 - Backup deve seguir o formato padrão definido pelo App Base.
 - Não adicionar dependências sem necessidade.
 - Não implementar login, assinatura ou recursos premium nesta versão da plataforma.
+- Criar funcionalidades específicas do aplicativo em `src/features/`.
+- Usar `package.json` como fonte única da versão exibida pelo aplicativo.

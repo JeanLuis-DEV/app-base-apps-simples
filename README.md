@@ -16,6 +16,8 @@ O `AppLayout`, os estilos globais e os arquivos específicos da aplicação perm
 
 O `index.html` é a entrada oficial do starter reutilizável. O `showcase.html` preserva a referência visual e interativa dos componentes oficiais sem fazer parte do build de produção padrão.
 
+A versão exibida pelo starter é lida diretamente de `package.json`, habilitada por `resolveJsonModule`.
+
 Para abrir o showcase durante o desenvolvimento, execute `npm run dev` e acesse `/showcase.html` no servidor local.
 
 Ao criar um novo aplicativo a partir desta base, remova:
@@ -35,10 +37,22 @@ npm run dev
 ## Build
 
 ```sh
+npm test
 npm run build
 ```
 
-O comando verifica os tipos com TypeScript e gera os arquivos de produção em `dist/`.
+O teste aceita a ausência inicial de arquivos de teste. O build verifica os tipos com TypeScript e gera os arquivos de produção em `dist/`.
+
+## Derivar um novo aplicativo
+
+- Copiar o App Base.
+- Remover `showcase.html` e `src/showcase/`.
+- Trocar o nome em `package.json` e o título em `index.html`.
+- Atualizar o `README.md` e configurar os dados institucionais do aplicativo.
+- Criar funcionalidades em `src/features/` e usar a versão de `package.json`.
+- Executar `npm test` e `npm run build`.
+- Validar em 375 px, 640 px e 1440 px.
+- Confirmar `@apps-simples/ui@0.4.1`.
 
 ## Estrutura
 
@@ -46,6 +60,7 @@ O comando verifica os tipos com TypeScript e gera os arquivos de produção em `
 src/
   assets/
   components/
+  features/
   hooks/
   layouts/
     AppLayout.tsx
@@ -71,4 +86,4 @@ tsconfig.json
 vite.config.ts
 ```
 
-`src/components/` fica disponível para componentes específicos do aplicativo. Componentes compartilhados e tokens visuais pertencem a `@apps-simples/ui`.
+`src/features/` é a convenção recomendada para funcionalidades específicas do aplicativo. `src/components/` fica disponível para componentes locais reutilizáveis. Componentes compartilhados e tokens visuais pertencem a `@apps-simples/ui`.
