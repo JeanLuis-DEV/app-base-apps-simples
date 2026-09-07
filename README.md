@@ -12,6 +12,17 @@ A dependência está fixada na tag `v0.4.1` do repositório `JeanLuis-DEV/design
 
 O `AppLayout`, os estilos globais e os arquivos específicos da aplicação permanecem no App Base.
 
+## Starter e showcase
+
+O `index.html` é a entrada oficial do starter reutilizável. O `showcase.html` preserva a referência visual e interativa dos componentes oficiais sem fazer parte do build de produção padrão.
+
+Para abrir o showcase durante o desenvolvimento, execute `npm run dev` e acesse `/showcase.html` no servidor local.
+
+Ao criar um novo aplicativo a partir desta base, remova:
+
+- `showcase.html`;
+- `src/showcase/`.
+
 ## Execução
 
 Requer Node.js `20.19+` na linha 20, ou `22.12+`, e npm.
@@ -38,6 +49,10 @@ src/
   hooks/
   layouts/
     AppLayout.tsx
+  showcase/
+    main.tsx
+    ShowcaseApp.tsx
+    showcase.css
   styles/
     global.css
     layout.css
@@ -49,6 +64,7 @@ src/
 public/
 AGENTS.md
 index.html
+showcase.html
 package.json
 package-lock.json
 tsconfig.json
